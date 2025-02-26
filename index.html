@@ -17,28 +17,58 @@
         
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
             margin: 20px;
             background-color: rgb(197, 172, 103);
         }
+
+        h1 {
+            text-align: center; /* Centraliza o título principal */
+        }
+
+        h2 {
+            margin-left: 20px; /* Alinha o subtítulo à esquerda */
+        }
+
+        h2.centralizado {
+            text-align: center;
+            width: 100%;
+        }
+
         .sumario {
             display: flex;
             justify-content: space-between;
             max-width: 800px;
-            margin: 0 auto;
+            margin-left: 20px; /* Alinha o sumário à esquerda */
             text-align: left;
         }
         .coluna {
             width: 45%;
         }
         .mapa {
-            margin-top: 20px;
+            display: flex;
+            flex-direction: column; /* Organiza os itens verticalmente */
+            align-items: center; /* Centraliza os elementos horizontalmente */
+            text-align: center; /* Centraliza o texto dentro da div */
+            margin: 20px auto;
+            max-width: 900px; /* Define uma largura máxima */
         }
+        .mapa h3 {
+            text-align: center; /* Centraliza o texto "Mapa" */
+            width: 100%;
+        }
+
         img {
             width: 190%; /* Aumento de 30% no tamanho dos mapas */
             max-width: 900px;
             height: auto;
             border: 5px solid black;
+
+        .mapa img {
+            display: block; /* Garante que a imagem seja centralizada */
+            margin: 0 auto; /* Centraliza a imagem */
+            width: 100%; /* Ajustável conforme necessário */
+            max-width: 900px; /* Mantém um tamanho adequado */
+
         }
         .bairros {
             margin-top: 10px;
@@ -100,7 +130,7 @@
         </div>
     </div>
     
-    <h2>Mapas</h2>
+    <h2 class="centralizado">Mapas</h2>
     <div class="mapa" id="mapa1">
         <h3>Mapa 1</h3>
         <img src="mapa1.png" alt="Mapa 1">
